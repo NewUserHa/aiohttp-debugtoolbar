@@ -56,6 +56,10 @@ In order to plug in ``aiohttp_debugtoolbar``, call
     app = web.Application(loop=loop)
     aiohttp_debugtoolbar.setup(app)
 
+Note:
+
+  This middleware needs to work with a valid HTML document response.(i.e. *content_type: 'text/html'* and contains *</head>* and *</body>* tags.)
+
 
 Full Example
 ------------
